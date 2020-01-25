@@ -1,0 +1,29 @@
+// Introduction.
+.introduction {
+  background: url("../../assets/images/backgrounds/introduction.svg") no-repeat
+    center / cover;
+  &__layout {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__content {
+    max-width: 80%;
+    @include tablet {
+      max-width: 60%;
+    }
+  }
+  &__title,
+  &__text {
+    color: $dark-text;
+    padding-bottom: unset;
+  }
+  &__title {
+    font-weight: $bold;
+    padding-bottom: 1rem;
+  }
+  &__text {
+  }
+}

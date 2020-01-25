@@ -5,3 +5,4 @@
  */
 
 import "./animations";
+import "./menu";

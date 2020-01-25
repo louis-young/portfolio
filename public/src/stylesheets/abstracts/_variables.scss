@@ -2,24 +2,24 @@
 * Colours.
 */
 
-$primary-color: hotpink;
+$primary-color: #4156d0;
 $secondary-color: lightsteelblue;
 $tertiary-color: darkslategrey;
 
 $accent-color: tan;
 
 $light-text: #ffffff;
-$dark-text: #131313;
+$dark-text: #212529;
 
-$light-background: #ffffff;
+$light-background: #fafafa;
 $dark-background: #222b33;
 
-$ratio: 15%;
+$ratio: 10%;
 
 $transparency: 0.3;
 
 $primary-color-dark: darken($primary-color, $ratio);
-$primary-color-light: lighten($primary-color, $ratio);
+$primary-color-light: #f1f7ff;
 $primary-color-transparent: transparentize($primary-color, $transparency);
 
 $secondary-color-dark: darken($secondary-color, $ratio);

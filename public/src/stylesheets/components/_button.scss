@@ -1,5 +1,6 @@
-.button {
-  padding: 1rem 2.5rem;
+.button,
+%button {
+  padding: 1.25rem 2rem;
   background: $primary-color;
   color: $white;
   border: none;
@@ -7,6 +8,8 @@
   min-width: 150px;
   text-align: center;
   transition: background 0.2s ease-in-out;
+  font-weight: $medium;
+  margin-top: 1.5rem;
   &:hover {
     background: $primary-color-dark;
   }

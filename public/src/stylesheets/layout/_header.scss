@@ -1,0 +1,65 @@
+// Header.
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  @include tablet {
+    padding: 2rem 0;
+  }
+  &__logo {
+  }
+}
+
+// Navigation.
+.navigation {
+  display: none;
+  flex-basis: 100%;
+  padding-top: 1rem;
+  @include tablet {
+    flex-basis: unset;
+    padding: unset;
+    display: initial;
+  }
+  &--open {
+    display: initial;
+  }
+  &__list {
+    @include tablet {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__item {
+    padding: 0.5rem 0;
+    @include tablet {
+      margin: 0 1rem;
+    }
+    &:last-of-type {
+      margin-right: unset;
+    }
+  }
+  &__link {
+    color: $dark-text;
+    @include tablet {
+      color: $white;
+    }
+    &:hover,
+    &--active {
+      text-decoration: underline;
+    }
+    &--featured {
+      @include tablet {
+        color: $primary-color;
+        background: $white;
+        padding: 0.5rem 2rem;
+      }
+    }
+  }
+}

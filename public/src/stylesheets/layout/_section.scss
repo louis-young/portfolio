@@ -6,19 +6,25 @@
   @include tablet {
     padding: 3rem 0;
   }
+
   @include laptop {
     padding: 4rem 0;
   }
+
   @include desktop {
     padding: 5rem 0;
   }
 
-  &--dark {
-    background: $dark-background;
-    #{$self}__title,
-    #{$self}__text {
-      color: $light-text;
-    }
+  @include retina {
+    padding: 7.5rem 0;
+  }
+
+  &--grey {
+    background: $light-background;
+  }
+
+  &--blue {
+    background: $primary-color-light;
   }
 
   &--center {

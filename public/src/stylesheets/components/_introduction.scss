@@ -1,7 +1,7 @@
 // Introduction.
 .introduction {
   background: url("../../assets/images/backgrounds/introduction.svg") no-repeat
-    center / cover;
+    center top / cover;
   &__layout {
     height: 100vh;
     position: relative;
@@ -24,6 +24,6 @@
     font-weight: $bold;
     padding-bottom: 1rem;
   }
-  &__text {
-  }
+  // &__text {
+  // }
 }

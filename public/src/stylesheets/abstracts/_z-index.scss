@@ -1,0 +1,21 @@
+/**
+ * z-index.
+ *
+ * Return the z-index for the given selector.
+ */
+
+@function z-index($selector) {
+  @return map-get($stack, $selector);
+}
+
+@mixin z-index($key) {
+  z-index: z-index($key);
+}
+
+/**
+   * Stacking map.
+   */
+
+$stack: (
+  "class": 2147000000
+);

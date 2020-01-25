@@ -1,0 +1,5 @@
+// Link.
+.link {
+  @extend %hover;
+  color: $primary-color;
+}

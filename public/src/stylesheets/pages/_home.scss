@@ -9,27 +9,150 @@
 }
 
 // Project.
-.project {
-  &__link {
+// .project {
+//   &__link {
+//     position: relative;
+//     &:before {
+//       @extend %pseudo;
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       width: 100%;
+//       height: 100%;
+//       background: $white;
+//       opacity: 0;
+//       transition: opacity 0.5s ease-in-out;
+//     }
+//     &:hover {
+//       &::before {
+//         opacity: 0.75;
+//       }
+//     }
+//   }
+//   &__preview {
+//     width: 100%;
+//   }
+// }
+
+// Content.
+.content {
+  $self: &;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  grid-template-areas:
+    "illustration"
+    "content";
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "illustration content";
+  }
+  &__image {
+    display: block;
+    max-width: 275px;
+  }
+  &__title {
+    @extend %h3;
+    color: $primary-color;
     position: relative;
-    &:before {
+    padding-bottom: 0.5rem;
+    &:after {
       @extend %pseudo;
       position: absolute;
-      top: 0;
+      bottom: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
-      background: $white;
-      opacity: 0;
-      transition: opacity 0.5s ease-in-out;
+      width: 30px;
+      height: 4px;
+      background: $primary-color;
     }
-    &:hover {
-      &::before {
-        opacity: 0.75;
+  }
+  &__text {
+    padding-top: 0.75rem;
+  }
+  &__illustration {
+    grid-area: illustration;
+  }
+  &__content {
+    grid-area: content;
+  }
+  &--reverse {
+    @include tablet {
+      grid-template-areas: "content illustration";
+      #{$self}__image {
+        margin-left: auto;
       }
     }
   }
-  &__preview {
+}
+
+// Skills.
+.skills {
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    @include laptop {
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+  &__title {
+    line-height: unset;
+    font-weight: $semi-bold;
+  }
+  &__layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    @include laptop {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2rem;
+    }
+    @include desktop {
+      grid-gap: 5rem;
+    }
+  }
+}
+
+// Skill.
+.skill {
+  &__title {
+    line-height: unset;
+    font-weight: $semi-bold;
+  }
+  &__text {
+    color: $medium-text;
+  }
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  @include laptop {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15%;
+  }
+
+  &__title {
+    line-height: unset;
+    font-weight: $semi-bold;
+  }
+  &__text {
+  }
+}
+
+.form {
+  &__input {
+    display: block;
     width: 100%;
+    margin-bottom: 1rem;
+    &::placeholder {
+      color: $medium-text;
+    }
+    &--text {
+      margin-bottom: unset;
+    }
   }
 }

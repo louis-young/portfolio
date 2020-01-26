@@ -160,15 +160,14 @@ a {
 
 textarea {
   resize: vertical;
-  min-height: 150px;
+  min-height: 125px;
 }
 
 input,
 textarea,
 select {
-  padding: 1rem;
-  border: unset;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 0.75rem;
+  border: solid rgba(112, 112, 112, 0.278) 1px;
 }
 
 h1 + p,

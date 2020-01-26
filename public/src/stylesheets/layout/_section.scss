@@ -2,7 +2,6 @@
 .section {
   $self: &;
   padding: 2rem 0;
-  background: $white;
   @include tablet {
     padding: 3rem 0;
   }

@@ -90,7 +90,7 @@
   &__inner {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     align-items: flex-start;
     justify-content: space-between;
     @include laptop {
@@ -98,7 +98,6 @@
     }
   }
   &__title {
-    line-height: unset;
     font-weight: $semi-bold;
   }
   &__layout {
@@ -117,8 +116,11 @@
 
 // Skill.
 .skill {
+  margin: 1rem 0;
+  &:last-of-type {
+    margin-bottom: unset;
+  }
   &__title {
-    line-height: unset;
     font-weight: $semi-bold;
   }
   &__text {
@@ -136,11 +138,10 @@
   }
 
   &__title {
-    line-height: unset;
     font-weight: $semi-bold;
   }
-  &__text {
-  }
+  // &__text {
+  // }
 }
 
 .form {

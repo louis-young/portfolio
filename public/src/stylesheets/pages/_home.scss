@@ -120,6 +120,9 @@
   &:last-of-type {
     margin-bottom: unset;
   }
+  @include laptop {
+    margin: unset;
+  }
   &__title {
     font-weight: $semi-bold;
   }

@@ -152,11 +152,20 @@
     display: block;
     width: 100%;
     margin-bottom: 1rem;
+    border: unset;
+    padding: 1rem;
+    background: rgb(245, 245, 245);
+    border-radius: 0.25rem;
     &::placeholder {
-      color: $medium-text;
+      color: rgb(99, 99, 99);
     }
     &--text {
       margin-bottom: unset;
     }
   }
+}
+
+.footer {
+  background: #b7d7f1;
+  padding: 5rem 0;
 }

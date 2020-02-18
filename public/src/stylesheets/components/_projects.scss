@@ -1,0 +1,32 @@
+// Projects.
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+  }
+  @include laptop {
+    grid-gap: 4rem;
+  }
+  @include desktop {
+    grid-gap: 5rem;
+  }
+}
+
+//Project.
+.project {
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: translateY(-1%);
+  }
+  &__link {
+    position: relative;
+  }
+  &__preview {
+    @extend %round;
+    @extend %shadow;
+    width: 100%;
+  }
+}

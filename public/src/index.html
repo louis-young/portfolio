@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Document</title>
+  <title>Web Developer | Louis Young</title>
   <meta name="theme-color" content="#3460f1">
   <!-- SEO start. -->
   <meta name="description" content="">
@@ -69,7 +69,8 @@
   <section class="introduction">
     <article class="introduction__layout container">
       <header class="header">
-        <a href="#top"><img src="//placehold.it/200x50" alt="Web Developer" class="header__logo"></a>
+        <a href="#top" class="logo"><span class="logo__text logo__text--dark">Louis</span> <span
+            class="logo__text logo__text--light">Young</span></a>
 
         <button class="toggle">
           <span class="toggle__line"></span>
@@ -77,8 +78,8 @@
 
         <nav class="navigation">
           <ul class="navigation__list">
-            <li class="navigation__item"><a href="#work" class="navigation__link navigation__link--active">Work</a></li>
-            <li class="navigation__item"><a href="#skills" class="navigation__link">Skills</a>
+            <li class="navigation__item"><a href="#skills" class="navigation__link navigation__link--active">Skills</a>
+            <li class="navigation__item"><a href="#work" class="navigation__link">Work</a></li>
             </li>
             <li class="navigation__item"><a href="#contact"
                 class="navigation__link navigation__link--featured">Contact</a>
@@ -95,42 +96,8 @@
       </article>
     </article>
   </section>
-  <!-- 
-  <section class="projects section container container--extra-large" id="work">
-    <article class="project">
-      <a href="#!" class="project__link">
-        <figure>
-          <img src="//placehold.it/700x700" alt="Web Developer" class="project__preview">
-        </figure>
-      </a>
-    </article>
 
-    <article class="project">
-      <a href="#!" class="project__link">
-        <figure>
-          <img src="//placehold.it/700x700" alt="Web Developer" class="project__preview">
-        </figure>
-      </a>
-    </article>
-
-    <article class="project">
-      <a href="#!" class="project__link">
-        <figure>
-          <img src="//placehold.it/700x700" alt="Web Developer" class="project__preview">
-        </figure>
-      </a>
-    </article>
-
-    <article class="project">
-      <a href="#!" class="project__link">
-        <figure>
-          <img src="//placehold.it/700x700" alt="Web Developer" class="project__preview">
-        </figure>
-      </a>
-    </article>
-  </section> -->
-
-  <section class="skills section">
+  <section class="skills section section--first" id="skills">
     <article class="skills__inner container">
       <h2 class="skills__title">Expertise</h2>
 
@@ -158,9 +125,36 @@
     </article>
   </section>
 
+  <section class="projects section container" id="work">
+    <article class="project">
+      <a href="#!" class="project__link">
+        <video autoplay muted loop playsinline loading="lazy" class="project__preview"
+          src="https://danielkorpai.com/dist/img/dribbble/finder-for-ipad-concept-full.mp4"></video>
+      </a>
+    </article>
+    <article class="project">
+      <a href="#!" class="project__link">
+        <video autoplay muted loop playsinline loading="lazy" class="project__preview"
+          src="https://danielkorpai.com/dist/img/dribbble/finder-for-ipad-pro-multitasking.mp4"></video>
+      </a>
+    </article>
+    <article class="project">
+      <a href="#!" class="project__link">
+        <img loading="lazy" src="https://danielkorpai.com/dist/img/dribbble/landing-page-template.png"
+          alt="Web Developer" class="project__preview">
+      </a>
+    </article>
+    <article class="project">
+      <a href="#!" class="project__link">
+        <video autoplay muted loop playsinline loading="lazy" class="project__preview"
+          src="https://danielkorpai.com/dist/img/dribbble/photography-portfolio-concept.mp4"></video>
+      </a>
+    </article>
+  </section>
+
   <section class="content section container">
     <figure>
-      <img src="./assets/images/illustrations/graph.svg" alt="Web Developer" class="content__image">
+      <img src="./assets/images/illustrations/graph.svg" alt="Web Developer" class="content__image" loading="lazy">
     </figure>
     <article>
       <h2 class="content__title">Lorem ipsum dolor sit amet</h2>
@@ -169,9 +163,9 @@
     </article>
   </section>
 
-  <section class="content content--reverse section section--no-top container">
+  <section class="content content--reverse section container">
     <figure class="content__illustration">
-      <img src="./assets/images/illustrations/message.svg" alt="Web Developer" class="content__image">
+      <img src="./assets/images/illustrations/message.svg" alt="Web Developer" class="content__image" loading="lazy">
     </figure>
     <article class="content__content">
       <h2 class="content__title">Lorem ipsum dolor sit amet</h2>
@@ -180,7 +174,7 @@
     </article>
   </section>
 
-  <section class="contact section container">
+  <section class="contact container section section--last" id="contact">
     <article>
       <h2 class="contact__title">Contact</h2>
       <p class="contact__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem beatae, delectus
@@ -198,7 +192,18 @@
 
   <footer class="footer">
     <section class="footer__layout container">
-      <a href="#top"><img src="//placehold.it/200x50" alt="Web Developer" class="footer__logo"></a>
+      <article>
+        <a href="#top" class="logo"><span class="logo__text logo__text--dark">Louis</span> <span
+            class="logo__text logo__text--light">Young</span></a>
+      </article>
+      <article class="socials">
+        <a href="//github.com/louis-young"><img src="./assets/images/icons/socials/github.svg" alt="Github"
+            class="socials__icon"></a>
+        <a href="//twitter.com/louisryoungg"><img src="./assets/images/icons/socials/twitter.svg" alt="Twitter"
+            class="socials__icon"></a>
+        <a href="//linkedin.com/in/louis-r-young"><img src="./assets/images/icons/socials/linkedin.svg" alt="LinkedIn"
+            class="socials__icon"></a>
+      </article>
     </section>
   </footer>
 

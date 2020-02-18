@@ -1,0 +1,50 @@
+// Content.
+.content {
+  $self: &;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  grid-template-areas:
+    "illustration"
+    "content";
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "illustration content";
+  }
+  &__image {
+    display: block;
+    max-width: 275px;
+  }
+  &__title {
+    @extend %h3;
+    color: $primary-color;
+    position: relative;
+    padding-bottom: 0.5rem;
+    &:after {
+      @extend %pseudo;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 4px;
+      background: $primary-color;
+    }
+  }
+  &__text {
+    padding-top: 0.75rem;
+  }
+  &__illustration {
+    grid-area: illustration;
+  }
+  &__content {
+    grid-area: content;
+  }
+  &--reverse {
+    @include tablet {
+      grid-template-areas: "content illustration";
+      #{$self}__image {
+        margin-left: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+// Contact.
+.contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  @include laptop {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15%;
+  }
+
+  &__title {
+    font-weight: $semi-bold;
+  }
+}

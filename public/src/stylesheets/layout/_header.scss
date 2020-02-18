@@ -12,8 +12,6 @@
   @include tablet {
     padding: 2rem 0;
   }
-  // &__logo {
-  // }
 }
 
 // Navigation.
@@ -53,6 +51,7 @@
     &:hover,
     &--active {
       text-decoration: underline;
+      text-underline-position: under;
     }
     &--featured {
       @include tablet {

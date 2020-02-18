@@ -1,0 +1,17 @@
+// Form.
+.form {
+  &__input {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    border: unset;
+    padding: 1rem;
+    background: rgb(245, 245, 245);
+    &::placeholder {
+      color: rgb(99, 99, 99);
+    }
+    &--text {
+      margin-bottom: unset;
+    }
+  }
+}

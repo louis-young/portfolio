@@ -1,21 +1,70 @@
 // Section.
 .section {
   $self: &;
-  padding: 2rem 0;
+  $padding: (
+    "mobile": 2rem,
+    "tablet": 3rem,
+    "laptop": 5rem,
+    "desktop": 6rem,
+    "retina": 7.5rem
+  );
+
+  padding: map-get($padding, "mobile") 0;
+
   @include tablet {
-    padding: 3rem 0;
+    padding: map-get($padding, "tablet") 0;
   }
 
   @include laptop {
-    padding: 4rem 0;
+    padding: map-get($padding, "laptop") 0;
   }
 
   @include desktop {
-    padding: 5rem 0;
+    padding: map-get($padding, "desktop") 0;
   }
 
   @include retina {
-    padding: 7.5rem 0;
+    padding: map-get($padding, "retina") 0;
+  }
+
+  &--first {
+    padding-top: map-get($padding, "mobile") * 2;
+
+    @include tablet {
+      padding-top: map-get($padding, "tablet") * 2;
+    }
+
+    @include laptop {
+      padding-top: map-get($padding, "laptop") * 2;
+    }
+
+    @include desktop {
+      padding-top: map-get($padding, "desktop") * 2;
+    }
+
+    @include retina {
+      padding-top: map-get($padding, "retina") * 2;
+    }
+  }
+
+  &--last {
+    padding-bottom: map-get($padding, "mobile") * 2;
+
+    @include tablet {
+      padding-bottom: map-get($padding, "tablet") * 2;
+    }
+
+    @include laptop {
+      padding-bottom: map-get($padding, "laptop") * 2;
+    }
+
+    @include desktop {
+      padding-bottom: map-get($padding, "desktop") * 2;
+    }
+
+    @include retina {
+      padding-bottom: map-get($padding, "retina") * 2;
+    }
   }
 
   &--grey {

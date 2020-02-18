@@ -1,0 +1,45 @@
+// Skills.
+.skills {
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    @include laptop {
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+  &__title {
+    font-weight: $semi-bold;
+  }
+  &__layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    @include laptop {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2rem;
+    }
+    @include desktop {
+      grid-gap: 5rem;
+    }
+  }
+}
+
+// Skill.
+.skill {
+  margin: 1rem 0;
+  &:last-of-type {
+    margin-bottom: unset;
+  }
+  @include laptop {
+    margin: unset;
+  }
+  &__title {
+    font-weight: $semi-bold;
+  }
+  &__text {
+    color: $medium-text;
+  }
+}

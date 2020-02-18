@@ -1,0 +1,15 @@
+// Logo.
+.logo {
+  font-weight: $semi-bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  &__text {
+    &--light {
+      color: $primary-color;
+    }
+    &--dark {
+      color: $dark-text;
+    }
+  }
+}

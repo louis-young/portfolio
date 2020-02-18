@@ -28,10 +28,7 @@
   <link rel="icon" type="image/x-icon" href="./assets/images/favicons/favicon.ico?v=1.0.0">
   <!-- Favicon end. -->
   <!-- Stylesheets start. -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-    integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"
-    integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" type="text/css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./stylesheets/main.min.css?v=1.0.0" type="text/css">
   <!-- Stylesheets end. -->
 </head>
@@ -88,7 +85,7 @@
         </nav>
       </header>
 
-      <article class="introduction__content">
+      <article class="introduction__content" data-aos="fade-up" data-aos-duration="1500">
         <h1 class="introduction__title">Web Developer</h1>
         <p class="introduction__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quae quidem
           laboriosam fugit commodi consequuntur veritatis nulla suscipit.</p>
@@ -97,7 +94,8 @@
     </article>
   </section>
 
-  <section class="skills section section--first" id="skills">
+  <section class="skills section section--first" id="skills" data-aos="fade-up" data-aos-duration="1000"
+    data-aos-offset="500">
     <article class="skills__inner container">
       <h2 class="skills__title">Expertise</h2>
 
@@ -125,7 +123,8 @@
     </article>
   </section>
 
-  <section class="projects section container" id="work">
+  <section class="projects section container" id="work" data-aos="fade-up" data-aos-duration="1000"
+    data-aos-offset="500">
     <article class="project">
       <a href="#!" class="project__link">
         <video autoplay muted loop playsinline loading="lazy" class="project__preview"
@@ -152,7 +151,7 @@
     </article>
   </section>
 
-  <section class="content section container">
+  <section class="content section container" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="500">
     <figure>
       <img src="./assets/images/illustrations/graph.svg" alt="Web Developer" class="content__image" loading="lazy">
     </figure>
@@ -163,7 +162,8 @@
     </article>
   </section>
 
-  <section class="content content--reverse section container">
+  <section class="content content--reverse section container" data-aos="fade-up" data-aos-duration="1000"
+    data-aos-offset="500">
     <figure class="content__illustration">
       <img src="./assets/images/illustrations/message.svg" alt="Web Developer" class="content__image" loading="lazy">
     </figure>
@@ -174,7 +174,8 @@
     </article>
   </section>
 
-  <section class="contact container section section--last" id="contact">
+  <section class="contact container section section--last" id="contact" data-aos="fade-up" data-aos-duration="1000"
+    data-aos-offset="500">
     <article>
       <h2 class="contact__title">Contact</h2>
       <p class="contact__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem beatae, delectus
@@ -208,16 +209,7 @@
   </footer>
 
   <!-- Scripts start. -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"
-    type="text/javascript"></script>
-  <script src="https://cdn.jsdelivr.net/npm/objectFitPolyfill@2.3.0/dist/objectFitPolyfill.basic.min.js"
-    integrity="sha256-Kms38lBvuW1aCtPabohpwj3Xx1VCuIjGgDS6X6ay3Hc=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-    integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"
-    integrity="sha256-gHiUEskgBO+3ccSDRM+c5+nEwTGp64R99KYPfITpnuo=" crossorigin="anonymous"
-    type="text/javascript"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/body-scroll-lock@2.6.4/lib/bodyScrollLock.min.js"
     integrity="sha256-Jhm98OCp15t0/tE4nKLT2mHwgYgTt2wxpiZFn4PV1Iw=" crossorigin="anonymous"
     type="text/javascript"></script>

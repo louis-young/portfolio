@@ -6,9 +6,6 @@
   @include tablet {
     text-align: left;
   }
-  @include laptop {
-    padding: 3.5rem 0;
-  }
   &__layout {
     display: grid;
     grid-template-columns: auto;

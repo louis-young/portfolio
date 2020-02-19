@@ -12,6 +12,7 @@
     text-align: left;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "illustration content";
+    align-items: center;
   }
   &__image {
     display: block;
@@ -23,7 +24,8 @@
   }
   &__title {
     @extend %h3;
-    color: $primary-color;
+    color: $dark-text;
+    font-weight: $semi-bold;
     position: relative;
     padding-bottom: 0.5rem;
     &:after {

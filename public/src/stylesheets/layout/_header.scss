@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid $border;
   background: rgba(255, 255, 255, 0.95);
   z-index: 5;
   padding: 0.75rem 0;
@@ -12,23 +12,23 @@
     padding: 0.35rem 0;
   }
   &__layout {
-    display: grid;
-    grid-template-columns: 1fr auto;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     @include laptop {
-      grid-template-columns: 1fr 1fr 1fr;
+      flex-wrap: nowrap;
     }
   }
   &__button {
     @extend %round;
     align-items: flex-end;
-    padding: 0.75rem 1.25rem !important;
-    min-width: unset !important;
-    margin-left: auto !important;
-    margin-top: unset !important;
+    padding: 0.75rem 1.25rem;
+    min-width: unset;
+    margin-left: auto;
+    margin-top: unset;
     &--small {
-      margin-top: 0.5rem !important;
+      margin-top: 0.5rem;
       width: 100%;
       @include tablet {
         display: none;
@@ -55,6 +55,12 @@
       display: none;
       @include tablet {
         display: initial;
+      }
+    }
+    &--left,
+    &--right {
+      @include tablet {
+        flex-basis: 30%;
       }
     }
   }
@@ -85,15 +91,25 @@
     @include tablet {
       margin: 0 1rem;
     }
+    @include laptop {
+      margin: 0 2rem;
+    }
+    @include desktop {
+      margin: 0 3rem;
+    }
+    &:first-of-type {
+      margin-left: unset;
+    }
     &:last-of-type {
       margin-right: unset;
     }
   }
   &__link {
+    @extend %hover;
     color: $dark-text;
-    &:hover,
+    font-weight: $medium;
     &--active {
-      text-decoration: underline;
+      font-weight: $semi-bold;
     }
     &--featured {
       @include tablet {

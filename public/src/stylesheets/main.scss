@@ -13,11 +13,6 @@
 
 @import "base/typography";
 
-@import "layout/containers";
-@import "layout/footer";
-@import "layout/header";
-@import "layout/section";
-
 @import "components/button";
 @import "components/link";
 @import "components/fallback";
@@ -30,6 +25,13 @@
 @import "components/contact";
 @import "components/form";
 @import "components/socials";
+@import "components/separator";
+@import "components/anchor";
+
+@import "layout/containers";
+@import "layout/footer";
+@import "layout/header";
+@import "layout/section";
 
 @import "pages/home";
 

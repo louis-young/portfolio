@@ -3,20 +3,25 @@
   // background: url("../assets/images/backgrounds/introduction.svg") no-repeat
   //   center top / cover;
   &__layout {
-    height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     justify-content: space-between;
     grid-gap: 2rem;
     min-height: 600px;
+    padding: 5rem 0;
+    text-align: center;
     @include laptop {
+      text-align: left;
+      height: 100vh;
       grid-template-columns: 1fr 1fr;
     }
   }
   &__content {
     max-width: 80%;
+    margin: auto;
     @include tablet {
+      margin: unset;
       max-width: 90%;
     }
   }

@@ -13,7 +13,7 @@
   }
   &__layout {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr auto;
     justify-content: space-between;
     align-items: center;
     @include laptop {
@@ -22,12 +22,25 @@
   }
   &__button {
     @extend %round;
-    width: auto;
-    margin-top: unset !important;
     align-items: flex-end;
     padding: 0.75rem 1.25rem !important;
     min-width: unset !important;
     margin-left: auto !important;
+    margin-top: unset !important;
+    &--small {
+      margin-top: 0.5rem !important;
+      width: 100%;
+      @include tablet {
+        display: none;
+      }
+    }
+    &--large {
+      display: none;
+
+      @include tablet {
+        display: initial;
+      }
+    }
   }
   &__item {
     &--toggle {

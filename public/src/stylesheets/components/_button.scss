@@ -1,5 +1,6 @@
 .button,
 %button {
+  @extend %round;
   padding: 1.25rem 2rem;
   background: $primary-color;
   color: $white;

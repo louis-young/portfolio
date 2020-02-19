@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Web Developer | Louis Young</title>
+  <title>Web Developer - Bespoke Websites | Louis Young</title>
   <meta name="theme-color" content="#3460f1">
   <!-- SEO start. -->
   <meta name="description" content="">
@@ -63,34 +63,41 @@
     </article>
   </section>
 
-  <section class="introduction">
-    <article class="introduction__layout container">
-      <header class="header">
-        <a href="#top" class="logo"><span class="logo__text logo__text--dark">Louis</span> <span
-            class="logo__text logo__text--light">Young</span></a>
+  <header class="header">
+    <section class="header__layout container">
+      <a href="#top" class="logo"><span class="logo__text logo__text--dark">Louis</span> <span
+          class="logo__text logo__text--light">Young</span></a>
 
+      <article class="header__item header__item--toggle">
         <button class="toggle">
           <span class="toggle__line"></span>
         </button>
+      </article>
 
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item"><a href="#skills" class="navigation__link navigation__link--active">Skills</a>
-            <li class="navigation__item"><a href="#work" class="navigation__link">Work</a></li>
-            </li>
-            <li class="navigation__item"><a href="#contact"
-                class="navigation__link navigation__link--featured">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#skills" class="navigation__link navigation__link--active">Skills</a>
+          <li class="navigation__item"><a href="#work" class="navigation__link">Work</a></li>
+          <li class="navigation__item"><a href="#skills" class="navigation__link">Blog</a>
+          </li>
+        </ul>
+      </nav>
 
+      <article class="header__item header__item--right">
+        <a href="#contact" class="header__button button">Contact</a>
+      </article>
+    </section>
+  </header>
+
+  <section class="introduction">
+    <article class="introduction__layout container" data-aos="fade-up" data-aos-duration="1500">
       <article class="introduction__content" data-aos="fade-up" data-aos-duration="1500">
         <h1 class="introduction__title">Web Developer</h1>
         <p class="introduction__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quae quidem
           laboriosam fugit commodi consequuntur veritatis nulla suscipit.</p>
         <a href="#work" class="button">View my Work</a>
       </article>
+      <img src="./assets/images/illustrations/mockup.svg" alt="Web Developer" class="introduction__illustration">
     </article>
   </section>
 

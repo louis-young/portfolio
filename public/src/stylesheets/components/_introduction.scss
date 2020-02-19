@@ -1,19 +1,23 @@
 // Introduction.
 .introduction {
-  background: url("../assets/images/backgrounds/introduction.svg") no-repeat
-    center top / cover;
+  // background: url("../assets/images/backgrounds/introduction.svg") no-repeat
+  //   center top / cover;
   &__layout {
     height: 100vh;
-    position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
+    grid-gap: 2rem;
     min-height: 600px;
+    @include laptop {
+      grid-template-columns: 1fr 1fr;
+    }
   }
   &__content {
     max-width: 80%;
     @include tablet {
-      max-width: 60%;
+      max-width: 90%;
     }
   }
   &__title,
@@ -25,6 +29,8 @@
     font-weight: $bold;
     padding-bottom: 1rem;
   }
-  // &__text {
-  // }
+  &__illustration {
+    display: block;
+    margin-left: auto;
+  }
 }

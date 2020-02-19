@@ -1,10 +1,22 @@
 // Footer.
 .footer {
   background: #f1f7ff;
-  padding: 5rem 0;
+  text-align: center;
+  padding: 2.5rem 0;
+  @include tablet {
+    text-align: left;
+  }
+  @include laptop {
+    padding: 5rem 0;
+  }
   &__layout {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 2rem;
+    @include tablet {
+      grid-template-columns: auto auto;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 }

@@ -3,7 +3,9 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
+  text-align: center;
   @include laptop {
+    text-align: left;
     grid-template-columns: 1fr 1fr;
     grid-gap: 15%;
   }

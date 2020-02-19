@@ -7,13 +7,19 @@
   grid-template-areas:
     "illustration"
     "content";
+  text-align: center;
   @include tablet {
+    text-align: left;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "illustration content";
   }
   &__image {
     display: block;
     max-width: 275px;
+    margin: auto;
+    @include laptop {
+      margin: unset;
+    }
   }
   &__title {
     @extend %h3;
@@ -24,10 +30,15 @@
       @extend %pseudo;
       position: absolute;
       bottom: 0;
-      left: 0;
+      left: 50%;
+      transform: translateX(-50%);
       width: 30px;
       height: 4px;
       background: $primary-color;
+      @include tablet {
+        left: 0;
+        transform: initial;
+      }
     }
   }
   &__text {

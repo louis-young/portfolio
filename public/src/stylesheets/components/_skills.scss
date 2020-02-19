@@ -1,5 +1,9 @@
 // Skills.
 .skills {
+  text-align: center;
+  @include laptop {
+    text-align: left;
+  }
   &__inner {
     display: grid;
     grid-template-columns: 1fr;

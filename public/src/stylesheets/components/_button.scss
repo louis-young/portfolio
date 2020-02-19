@@ -15,7 +15,7 @@
     box-shadow: 0 3px 20px rgba(59, 67, 191, 0.671);
   }
   &:active {
-    opacity: 0.5;
+    background: $primary-color-dark;
   }
   &[disabled] {
     opacity: 0.5;

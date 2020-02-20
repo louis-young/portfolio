@@ -37,3 +37,27 @@ const changeLinkState = () => {
 changeLinkState();
 
 window.addEventListener("scroll", changeLinkState);
+
+const header = () => {
+  const header = document.querySelector(".header");
+
+  header.addEventListener("click", event => {
+    const { target } = event;
+
+    console.log(target);
+
+    if (!target.classList.contains("header__link")) {
+      return;
+    }
+
+    const navigation = document.querySelector(".navigation");
+
+    navigation.classList.remove("navigation--open");
+
+    const toggle = document.querySelector(".toggle");
+
+    toggle.classList.remove("toggle--open");
+  });
+};
+
+header();

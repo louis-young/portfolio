@@ -7,9 +7,10 @@
     justify-content: space-between;
     grid-gap: 4rem;
     min-height: 600px;
-    padding: 5rem 0;
+    padding: calc(3rem + 60px) 0 4rem 0;
     text-align: center;
     @include laptop {
+      padding: unset;
       text-align: left;
       height: 100vh;
       grid-template-columns: 1fr 1fr;

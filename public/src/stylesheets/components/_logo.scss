@@ -5,6 +5,7 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   &__text {
+    pointer-events: none;
     &--light {
       color: $primary-color;
     }

@@ -27,25 +27,6 @@
     color: $dark-text;
     font-weight: $semi-bold;
     position: relative;
-    padding-bottom: 0.5rem;
-    &:after {
-      @extend %pseudo;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 30px;
-      height: 4px;
-      background: $primary-color;
-      @include tablet {
-        left: 0;
-        transform: initial;
-      }
-    }
-  }
-  &__text {
-    padding-top: 0.75rem;
-  }
   &__illustration {
     grid-area: illustration;
   }

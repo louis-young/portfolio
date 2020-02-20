@@ -10,3 +10,8 @@
 //  .section p {
 //     color: red !important;
 //  }
+
+// Needed to hide the Google Recaptcha badge.
+.grecaptcha-badge {
+  visibility: collapse !important;
+}

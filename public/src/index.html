@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+  <!-- Google Analytics start. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158823595-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-158823595-1');
+  </script>
+  <!-- Google Analytics end. -->
   <title>Web Developer - Bespoke Website Development | Louis Young</title>
   <meta name="theme-color" content="#4156d0">
   <meta charset="UTF-8">
@@ -199,7 +209,7 @@
         <input type="text" name="name" placeholder="Name" class="form__input" required>
         <input type="email" name="email" placeholder="Email" class="form__input" required>
         <textarea name="enquiry" class="form__input form__input--text" placeholder="Enquiry"></textarea>
-        <button class="button" type="submit">Send</button>
+        <button class="form__submit button" type="submit">Send</button>
       </form>
     </section>
 
@@ -252,7 +262,9 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/body-scroll-lock@2.6.4/lib/bodyScrollLock.min.js"
     integrity="sha256-Jhm98OCp15t0/tE4nKLT2mHwgYgTt2wxpiZFn4PV1Iw=" crossorigin="anonymous"></script>
-  <script src="./scripts/bundle.min.js?v=1.0.0"></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LcfxNoUAAAAABsesl6rqP3wSfjjt_k27sxYyRbx"></script>
+  <script src="./scripts/bundle.min.js?v=1.0.0">
+  </script>
   <!-- Scripts end. -->
 </body>
 

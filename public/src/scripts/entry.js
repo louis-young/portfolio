@@ -6,3 +6,4 @@
 
 import "./animations";
 import "./menu";
+import "./form";

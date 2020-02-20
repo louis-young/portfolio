@@ -1,5 +1,10 @@
 // Form.
 .form {
+  &--sent {
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+  }
   &__input {
     display: block;
     width: 100%;
@@ -13,5 +18,9 @@
     &--text {
       margin-bottom: unset;
     }
+  }
+  &__notification {
+    font-weight: $bold;
+    text-align: center;
   }
 }

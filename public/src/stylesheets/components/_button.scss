@@ -11,6 +11,7 @@
   transition: box-shadow 0.2s ease-in-out;
   font-weight: $medium;
   margin-top: 1.5rem;
+  font-size: 1rem;
   &:hover {
     box-shadow: 0 3px 20px rgba(59, 67, 191, 0.671);
   }

@@ -31,12 +31,12 @@
   <!-- Stylesheets end. -->
 </head>
 
-<body>
+<body class="page">
 
   <header class="header">
     <section class="header__layout container">
       <article class="header__item header__item--left">
-        <a href="#top" class="logo"><span class="logo__text logo__text--dark">Louis</span> <span
+        <a href="#top" class="logo header__link"><span class="logo__text logo__text--dark">Louis</span> <span
             class="logo__text logo__text--light">Young</span></a>
       </article>
 
@@ -48,21 +48,21 @@
 
       <nav class="navigation">
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="#skills" class="navigation__link navigation__link--active">Skills</a>
-          <li class="navigation__item"><a href="#work" class="navigation__link">Work</a></li>
-          <li class="navigation__item"><a href="#me" class="navigation__link">Me</a></li>
+          <li class="navigation__item"><a href="#skills" class="navigation__link header__link">Skills</a>
+          <li class="navigation__item"><a href="#work" class="navigation__link header__link">Work</a></li>
+          <li class="navigation__item"><a href="#about" class="navigation__link header__link">About</a></li>
         </ul>
         <a href="#contact" class="header__button header__button--small button">Contact</a>
       </nav>
 
       <article class="header__item header__item--right">
-        <a href="#contact" class="header__button header__button--large button">Contact</a>
+        <a href="#contact" class="header__link header__button header__button--large button">Contact</a>
       </article>
     </section>
   </header>
 
   <main>
-    <section class="introduction">
+    <section class="introduction page__section">
       <article class="introduction__layout container" data-aos="zoom-in-up" data-aos-duration="2000">
         <article class="introduction__content">
           <h1 class="introduction__title">Web Developer</h1>
@@ -81,7 +81,8 @@
 
     <hr class="separator">
 
-    <section class="skills section section--first" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="500">
+    <section class="skills section section--first page__section" data-aos="fade-up" data-aos-duration="2000"
+      data-aos-offset="500">
       <article class="skills__inner container">
         <h2 class="skills__title">Expertise</h2>
 
@@ -116,7 +117,8 @@
 
     <hr class="separator">
 
-    <section class="projects section container" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="500">
+    <section class="projects section container page__section" data-aos="fade-up" data-aos-duration="2000"
+      data-aos-offset="500">
       <article class="project">
         <a href="#!" class="project__link">
           <video autoplay muted loop playsinline loading="lazy" class="project__preview"
@@ -143,11 +145,12 @@
       </article>
     </section>
 
-    <hr class="anchor" id="me">
+    <hr class="anchor" id="about">
 
     <hr class="separator">
 
-    <section class="content section container" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="1000">
+    <section class="content section container page__section" data-aos="fade-up" data-aos-duration="2000"
+      data-aos-offset="1000">
       <figure>
         <img src="./assets/images/illustrations/usability.svg" alt="Web Developer" class="content__image"
           loading="lazy">
@@ -182,7 +185,7 @@
 
     <hr class="separator">
 
-    <section class="contact container section section--last" data-aos="fade-up" data-aos-duration="2000"
+    <section class="contact container section section--last page__section" data-aos="fade-up" data-aos-duration="2000"
       data-aos-offset="1000">
       <article>
         <h2 class="contact__title">Let's talk</h2>

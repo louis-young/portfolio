@@ -109,7 +109,7 @@
     color: $dark-text;
     font-weight: $medium;
     &--active {
-      font-weight: $semi-bold;
+      font-weight: $bold;
     }
     &--featured {
       @include tablet {

@@ -18,6 +18,28 @@ const menu = () => {
   };
 
   toggle.addEventListener("click", toggleNavigation);
+
+  const header = document.querySelector(".header");
+
+  header.addEventListener("click", event => {
+    const { target } = event;
+
+    console.log(target);
+
+    if (!target.classList.contains("header__link")) {
+      return;
+    }
+
+    const navigation = document.querySelector(".navigation");
+
+    navigation.classList.remove("navigation--open");
+
+    const toggle = document.querySelector(".toggle");
+
+    toggle.classList.remove("toggle--open");
+
+    bodyScrollLock.enableBodyScroll(scrollable); // eslint-disable-line no-undef
+  });
 };
 
 menu();
@@ -37,27 +59,3 @@ const changeLinkState = () => {
 changeLinkState();
 
 window.addEventListener("scroll", changeLinkState);
-
-const header = () => {
-  const header = document.querySelector(".header");
-
-  header.addEventListener("click", event => {
-    const { target } = event;
-
-    console.log(target);
-
-    if (!target.classList.contains("header__link")) {
-      return;
-    }
-
-    const navigation = document.querySelector(".navigation");
-
-    navigation.classList.remove("navigation--open");
-
-    const toggle = document.querySelector(".toggle");
-
-    toggle.classList.remove("toggle--open");
-  });
-};
-
-header();

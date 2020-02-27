@@ -1,0 +1,5 @@
+.background {
+  @include themed {
+    background: theme("background");
+  }
+}

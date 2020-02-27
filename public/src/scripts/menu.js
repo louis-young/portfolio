@@ -24,8 +24,6 @@ const menu = () => {
   header.addEventListener("click", event => {
     const { target } = event;
 
-    console.log(target);
-
     if (!target.classList.contains("header__link")) {
       return;
     }

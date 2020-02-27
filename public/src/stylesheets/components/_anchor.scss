@@ -1,8 +1,9 @@
 // Anchor.
 .anchor {
+  $height: 59px;
   display: block;
   margin: unset;
-  height: 60px;
-  margin-top: -60px;
+  height: $height;
+  margin-top: -$height;
   visibility: hidden;
 }

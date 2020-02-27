@@ -15,7 +15,7 @@ $margin: 0.25rem;
   margin-left: unset;
   border-radius: 0.25rem;
   font-size: 0.9rem;
-  color: $primary-color !important; // Fixes a strange specificity issue.
+  color: $primary-color !important; // sass-lint:disable-line no-important Fixes a strange specificity issue.
   line-height: initial;
   @include themed {
     background: theme("background-accent");

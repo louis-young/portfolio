@@ -10,7 +10,9 @@
       color: $primary-color;
     }
     &--dark {
-      color: $dark-text;
+      @include themed {
+        color: theme("text");
+      }
     }
   }
 }

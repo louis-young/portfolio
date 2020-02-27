@@ -11,9 +11,13 @@
     margin-bottom: 1rem;
     border: unset;
     padding: 1rem;
-    background: #f1f7ff;
+    @include themed {
+      background: theme("background-accent");
+    }
     &::placeholder {
-      color: rgb(99, 99, 99);
+      @include themed {
+        color: theme("text");
+      }
     }
     &--text {
       margin-bottom: unset;

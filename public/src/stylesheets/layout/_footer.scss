@@ -1,8 +1,10 @@
 // Footer.
 .footer {
-  background: #f1f7ff;
   text-align: center;
   padding: 2.5rem 0;
+  @include themed {
+    background: theme("background-accent");
+  }
   @include tablet {
     text-align: left;
   }

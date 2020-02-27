@@ -4,10 +4,12 @@
   top: 0;
   left: 0;
   width: 100%;
-  border-bottom: 1px solid $border;
-  background: rgba(255, 255, 255, 0.95);
   z-index: 5;
   padding: 0.75rem 0;
+  @include themed {
+    background: transparentize(t("background"), 0.1);
+    border-bottom: 1px solid t("border");
+  }
   @include tablet {
     padding: 0.35rem 0;
   }
@@ -106,17 +108,12 @@
   }
   &__link {
     @extend %hover;
-    color: $dark-text;
     font-weight: $medium;
+    @include themed {
+      color: theme("text");
+    }
     &--active {
       font-weight: $bold;
-    }
-    &--featured {
-      @include tablet {
-        color: $primary-color;
-        background: $white;
-        padding: 0.5rem 2rem;
-      }
     }
   }
 }

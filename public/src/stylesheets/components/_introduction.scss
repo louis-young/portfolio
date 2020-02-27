@@ -26,8 +26,10 @@
   }
   &__title,
   &__text {
-    color: $dark-text;
     padding-bottom: unset;
+    @include themed {
+      color: theme("text");
+    }
   }
   &__title {
     font-weight: $bold;

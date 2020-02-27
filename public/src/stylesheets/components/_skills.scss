@@ -16,6 +16,9 @@
   }
   &__title {
     font-weight: $semi-bold;
+    @include themed {
+      color: theme("text");
+    }
   }
   &__layout {
     display: grid;
@@ -42,8 +45,13 @@
   }
   &__title {
     font-weight: $semi-bold;
+    @include themed {
+      color: theme("text");
+    }
   }
   &__text {
-    color: $medium-text;
+    @include themed {
+      color: theme("text");
+    }
   }
 }

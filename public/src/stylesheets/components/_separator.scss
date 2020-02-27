@@ -1,7 +1,9 @@
 // Separator.
 .separator {
-  background: $border;
   height: 1px;
   border: unset;
   margin: unset;
+  @include themed {
+    background: theme("border");
+  }
 }

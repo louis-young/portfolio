@@ -4,8 +4,6 @@ $body-font-family: "Montserrat", sans-serif;
 
 $heading-font-family: inherit;
 
-$primary-text-color: $dark-text;
-
 $heading-line-height: 2;
 $body-line-height: 2;
 
@@ -21,7 +19,9 @@ $heavy: 900;
 
 body {
   font-family: $body-font-family;
-  color: $primary-text-color;
+  @include themed {
+    color: theme("text");
+  }
 }
 
 h1,
@@ -41,7 +41,9 @@ input,
 label,
 address {
   line-height: $body-line-height;
-  color: $primary-text-color;
+  @include themed {
+    color: theme("text");
+  }
 }
 
 %h1 {

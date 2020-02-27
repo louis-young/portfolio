@@ -57,3 +57,19 @@ const changeLinkState = () => {
 changeLinkState();
 
 window.addEventListener("scroll", changeLinkState);
+
+const toggleSwitch = document.querySelector(
+  '.theme-switch input[type="checkbox"]'
+);
+
+function switchTheme(e) {
+  if (e.target.checked) {
+    document.querySelector(".theme").classList.remove("theme--default");
+    document.querySelector(".theme").classList.add("theme--dark");
+  } else {
+    document.querySelector(".theme").classList.remove("theme--dark");
+    document.querySelector(".theme").classList.add("theme--default");
+  }
+}
+
+toggleSwitch.addEventListener("change", switchTheme, false);

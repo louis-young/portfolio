@@ -67,10 +67,6 @@
     }
   }
 
-  &--grey {
-    background: $light-background;
-  }
-
   &--blue {
     background: $primary-color-light;
   }
@@ -105,6 +101,8 @@
   }
 
   &__text {
-    color: $dark-text;
+    @include themed {
+      color: theme("text");
+    }
   }
 }

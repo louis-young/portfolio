@@ -8,14 +8,61 @@ $tertiary-color: darkslategrey;
 
 $accent-color: tan;
 
-$light-text: #ffffff;
-$medium-text: #434950;
-$dark-text: #212529;
+$text: #212529;
+$text-medium: #434950;
+$text-dark: #ffffff;
 
-$light-background: #fafafa;
-$dark-background: #222b33;
+$background: #fafafa;
+$background-dark: #0f1420;
+$background-accent: #f1f7ff;
+$background-accent-dark: #181e30;
 
 $border: rgba(0, 0, 0, 0.05);
+$border-dark: rgba(255, 255, 255, 0.05);
+
+$themes: (
+  default: (
+    background: $background,
+    text: $text,
+    border: $border,
+    background-accent: $background-accent
+  ),
+  dark: (
+    background: $background-dark,
+    text: $text-dark,
+    border: $border-dark,
+    background-accent: $background-accent-dark
+  )
+);
+
+@mixin themed() {
+  @each $theme, $map in $themes {
+    .theme--#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), "#{$key}");
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value
+          )
+        ) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function theme($key) {
+  @return map-get($theme-map, $key);
+}
+
+.background {
+  @include themed {
+    background: theme("background");
+  }
+}
 
 $ratio: 10%;
 

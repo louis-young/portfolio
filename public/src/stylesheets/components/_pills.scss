@@ -14,8 +14,10 @@ $margin: 0.25rem;
   margin: $margin;
   margin-left: unset;
   border-radius: 0.25rem;
-  background: #f1f7ff;
   font-size: 0.9rem;
-  color: $primary-color;
+  color: $primary-color !important; // Fixes a strange specificity issue.
   line-height: initial;
+  @include themed {
+    background: theme("background-accent");
+  }
 }

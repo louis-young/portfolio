@@ -24,9 +24,11 @@
   }
   &__title {
     @extend %h3;
-    color: $dark-text;
     font-weight: $semi-bold;
     position: relative;
+    @include themed {
+      color: theme("text");
+    }
   }
   &__illustration {
     grid-area: illustration;

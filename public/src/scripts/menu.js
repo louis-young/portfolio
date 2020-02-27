@@ -64,11 +64,11 @@ const toggleSwitch = document.querySelector(
 
 function switchTheme(e) {
   if (e.target.checked) {
-    document.querySelector(".theme").classList.remove("theme--default");
+    document.querySelector(".theme").classList.remove("theme--light");
     document.querySelector(".theme").classList.add("theme--dark");
   } else {
     document.querySelector(".theme").classList.remove("theme--dark");
-    document.querySelector(".theme").classList.add("theme--default");
+    document.querySelector(".theme").classList.add("theme--light");
   }
 }
 

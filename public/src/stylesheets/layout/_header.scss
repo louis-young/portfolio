@@ -7,8 +7,8 @@
   z-index: 5;
   padding: 0.75rem 0;
   @include themed {
-    background: transparentize(theme("background"), 0.1);
-    border-bottom: 1px solid theme("border");
+    background: transparentize(theme($background), 0.1);
+    border-bottom: 1px solid theme($border);
   }
   @include tablet {
     padding: 0.35rem 0;
@@ -110,7 +110,7 @@
     @extend %hover;
     font-weight: $medium;
     @include themed {
-      color: theme("text");
+      color: theme($text);
     }
     &--active {
       font-weight: $bold;

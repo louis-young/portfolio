@@ -27,7 +27,7 @@
     font-weight: $semi-bold;
     position: relative;
     @include themed {
-      color: theme("text");
+      color: theme($text);
     }
   }
   &__illustration {

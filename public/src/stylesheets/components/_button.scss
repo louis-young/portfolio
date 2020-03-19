@@ -22,22 +22,4 @@
     opacity: 0.5;
     cursor: not-allowed;
   }
-  &--round {
-    @extend %round;
-  }
-  &--pill {
-    border-radius: 2.5rem;
-  }
-  &--secondary {
-    background: $secondary-color;
-    &:hover {
-      background: $secondary-color-dark;
-    }
-  }
-  &--accent {
-    background: $accent-color;
-    &:hover {
-      background: $accent-color-dark;
-    }
-  }
 }

@@ -18,6 +18,6 @@ $margin: 0.25rem;
   color: $primary-color !important; // sass-lint:disable-line no-important Fixes a strange specificity issue.
   line-height: initial;
   @include themed {
-    background: theme("background-accent");
+    background: theme($background-accent);
   }
 }

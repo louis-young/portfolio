@@ -1,5 +1,5 @@
 .background {
   @include themed {
-    background: theme("background");
+    background: theme($background);
   }
 }

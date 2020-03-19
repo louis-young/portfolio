@@ -13,7 +13,7 @@
   &__title {
     font-weight: $semi-bold;
     @include themed {
-      color: theme("text");
+      color: theme($text);
     }
   }
 }

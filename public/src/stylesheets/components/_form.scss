@@ -12,11 +12,11 @@
     border: unset;
     padding: 1rem;
     @include themed {
-      background: theme("background-accent");
+      background: theme($background-accent);
     }
     &::placeholder {
       @include themed {
-        color: theme("text");
+        color: theme($text);
       }
     }
     &--text {

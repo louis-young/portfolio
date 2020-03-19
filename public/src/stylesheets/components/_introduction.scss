@@ -28,7 +28,7 @@
   &__text {
     padding-bottom: unset;
     @include themed {
-      color: theme("text");
+      color: theme($text);
     }
   }
   &__title {

@@ -102,7 +102,7 @@
 
   &__text {
     @include themed {
-      color: theme("text");
+      color: theme($text);
     }
   }
 }

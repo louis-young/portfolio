@@ -20,7 +20,7 @@ $heavy: 900;
 body {
   font-family: $body-font-family;
   @include themed {
-    color: theme("text");
+    color: theme($text);
   }
 }
 
@@ -42,7 +42,7 @@ label,
 address {
   line-height: $body-line-height;
   @include themed {
-    color: theme("text");
+    color: theme($text);
   }
 }
 

@@ -12,7 +12,7 @@
   z-index: 4;
   outline: none;
   @include themed {
-    color: theme("text");
+    color: theme($text);
   }
   @include tablet {
     display: none;
@@ -27,7 +27,7 @@
     width: 100%;
     height: 2px;
     @include themed {
-      background: theme("text");
+      background: theme($text);
     }
     transition: all 0.25s ease-in-out;
   }

@@ -15,3 +15,10 @@
 .grecaptcha-badge {
   visibility: collapse !important;
 }
+
+// Needed to apply a transition to all children elements.
+.theme {
+  * {
+    transition: 0.2s;
+  }
+}

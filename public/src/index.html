@@ -325,13 +325,12 @@
     </section>
   </footer>
 
-  <div class="theme-switch-wrapper">
-    <label class="theme-switch" for="checkbox">
-      <input type="checkbox" id="checkbox" />
-      <div class="slider round"></div>
-    </label>
-    <em>Enable Dark Mode!</em>
-  </div>
+  <article class="switch">
+    <label for="light" class="switch__label switch__label--light switch__label--active">Light</label>
+    <input type="radio" name="theme" class="switch__input" id="light" data-theme="light">
+    <label for="dark" class="switch__label switch__label--dark">Dark</label>
+    <input type="radio" name="theme" class="switch__input" id="dark" data-theme="dark">
+  </article>
 
   <section class="fallback">
     <article class="fallback__content container">

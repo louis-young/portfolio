@@ -1,0 +1,38 @@
+// Switch.
+.switch {
+  @extend %round;
+  @extend %shadow;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  &__label {
+    @extend %hover;
+    display: block;
+    padding: 0.25rem 0.5rem;
+    transition: 0.2s;
+    background: $white;
+    color: $primary-color !important; // sass-lint:disable-line
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: $medium;
+    &--light {
+      border-top-left-radius: $round;
+      border-bottom-left-radius: $round;
+    }
+    &--dark {
+      border-top-right-radius: $round;
+      border-bottom-right-radius: $round;
+    }
+    &--active {
+      background: $primary-color;
+      color: $white !important; // sass-lint:disable-line
+    }
+  }
+  &__input {
+    display: none;
+  }
+}

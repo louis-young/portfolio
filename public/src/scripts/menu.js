@@ -5,10 +5,12 @@ const menu = () => {
   const toggle = document.querySelector(".toggle");
   const navigation = document.querySelector(".navigation");
   const scrollable = document.querySelector(".navigation__inner");
+  const underlay = document.querySelector(".underlay");
 
   const toggleNavigation = () => {
     toggle.classList.toggle("toggle--open");
     navigation.classList.toggle("navigation--open");
+    underlay.classList.toggle("underlay--open");
 
     if (toggle.classList.contains("toggle--open")) {
       bodyScrollLock.disableBodyScroll(scrollable); // eslint-disable-line no-undef
@@ -37,6 +39,12 @@ const menu = () => {
     toggle.classList.remove("toggle--open");
 
     bodyScrollLock.enableBodyScroll(scrollable); // eslint-disable-line no-undef
+
+    underlay.classList.remove("underlay--open");
+  });
+
+  underlay.addEventListener("click", () => {
+    toggleNavigation();
   });
 };
 

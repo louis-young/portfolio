@@ -117,3 +117,21 @@
     }
   }
 }
+
+// Underlay.
+.underlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  z-index: 4;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s;
+  &--open {
+    opacity: 0.85;
+    pointer-events: initial;
+  }
+}

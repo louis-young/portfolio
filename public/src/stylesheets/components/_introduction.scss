@@ -19,7 +19,7 @@
   &__content {
     margin: auto;
     font-size: 1.15rem;
-    @include tablet {
+    @include laptop {
       margin: unset;
       max-width: 90%;
     }

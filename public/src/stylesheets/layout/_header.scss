@@ -10,7 +10,7 @@
     background: transparentize(theme($background), 0.1);
     border-bottom: 1px solid theme($border);
   }
-  @include tablet {
+  @include laptop {
     padding: 0.35rem 0;
   }
   &__layout {
@@ -32,14 +32,14 @@
     &--small {
       margin-top: 0.5rem;
       width: 100%;
-      @include tablet {
+      @include laptop {
         display: none;
       }
     }
     &--large {
       display: none;
 
-      @include tablet {
+      @include laptop {
         display: initial;
       }
     }
@@ -47,7 +47,7 @@
   &__item {
     &--toggle {
       text-align: right;
-      @include tablet {
+      @include laptop {
         text-align: center;
         display: none;
       }
@@ -55,13 +55,13 @@
     &--right {
       text-align: right;
       display: none;
-      @include tablet {
+      @include laptop {
         display: initial;
       }
     }
     &--left,
     &--right {
-      @include tablet {
+      @include laptop {
         flex-basis: 30%;
       }
     }
@@ -73,7 +73,7 @@
   display: none;
   flex-basis: 100%;
   padding-top: 1rem;
-  @include tablet {
+  @include laptop {
     flex-basis: unset;
     padding: unset;
     display: initial;
@@ -82,7 +82,7 @@
     display: initial;
   }
   &__list {
-    @include tablet {
+    @include laptop {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -95,9 +95,6 @@
   }
   &__item {
     padding: 0.5rem 0;
-    @include tablet {
-      margin: 0 1rem;
-    }
     @include laptop {
       margin: 0 2rem;
     }
@@ -123,7 +120,6 @@
     &--icon {
       display: flex;
       align-items: center;
-      justify-content: space-between;
     }
   }
 }

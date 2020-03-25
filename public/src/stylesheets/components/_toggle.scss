@@ -14,7 +14,7 @@
   @include themed {
     color: theme($text);
   }
-  @include tablet {
+  @include laptop {
     display: none;
   }
 

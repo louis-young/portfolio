@@ -16,7 +16,7 @@
     padding: 0.25rem 0.5rem;
     transition: 0.2s;
     background: $white;
-    color: $primary-color !important; // sass-lint:disable-line
+    color: $primary-color !important; // sass-lint:disable-line no-important
     text-transform: uppercase;
     font-size: 0.9rem;
     font-weight: $medium;
@@ -30,10 +30,13 @@
     }
     &--active {
       background: $primary-color;
-      color: $white !important; // sass-lint:disable-line
+      color: $white !important; // sass-lint:disable-line no-important
     }
   }
   &__input {
     display: none;
   }
+}
+.visible {
+  background: red !important;
 }

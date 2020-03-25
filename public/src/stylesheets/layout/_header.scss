@@ -88,6 +88,11 @@
       justify-content: center;
     }
   }
+  &__icon {
+    width: 12.5px;
+    display: block;
+    margin-left: 0.5rem;
+  }
   &__item {
     padding: 0.5rem 0;
     @include tablet {
@@ -114,6 +119,11 @@
     }
     &--active {
       font-weight: $bold;
+    }
+    &--icon {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
   }
 }

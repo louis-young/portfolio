@@ -49,19 +49,3 @@ const menu = () => {
 };
 
 menu();
-
-const links = document.querySelectorAll(".header__link");
-const sections = document.querySelectorAll(".page__section");
-
-const changeLinkState = () => {
-  let index = sections.length;
-
-  while (--index && window.scrollY + 60 < sections[index].offsetTop) {}
-
-  links.forEach(link => link.classList.remove("navigation__link--active"));
-  links[index].classList.add("navigation__link--active");
-};
-
-changeLinkState();
-
-window.addEventListener("scroll", changeLinkState);

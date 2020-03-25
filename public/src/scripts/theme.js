@@ -1,4 +1,4 @@
-const darkMode = () => {
+const theme = () => {
   const selectedTheme = localStorage.theme;
 
   const page = document.querySelector(".page");
@@ -40,4 +40,4 @@ const darkMode = () => {
   });
 };
 
-darkMode();
+theme();

@@ -14,7 +14,7 @@ const form = () => {
    * @param { string } message
    */
 
-  const destroy = message => {
+  const destroy = (message) => {
     form.innerHTML = `<h2 class="form__notification">${message}</h2>`;
     form.classList.add("form--sent");
   };
@@ -27,10 +27,10 @@ const form = () => {
    * @param { nodeList } inputs
    */
 
-  const serialize = inputs => {
+  const serialize = (inputs) => {
     const fields = {};
 
-    Array.from(inputs).forEach(input => {
+    Array.from(inputs).forEach((input) => {
       const { name, value } = input;
 
       fields[name] = value;
@@ -47,7 +47,7 @@ const form = () => {
    * @param { object } event
    */
 
-  const submit = async event => {
+  const submit = async (event) => {
     event.preventDefault();
 
     const button = document.querySelector(".form__submit");
@@ -67,7 +67,7 @@ const form = () => {
 
       const response = await fetch(url, {
         method: "POST",
-        body: formData
+        body: formData,
       });
 
       const sent = await response.json();
@@ -93,7 +93,7 @@ grecaptcha.ready(async () => {
   const response = grecaptcha.execute(
     "6LcfxNoUAAAAABsesl6rqP3wSfjjt_k27sxYyRbx",
     {
-      action: "form"
+      action: "form",
     }
   );
 

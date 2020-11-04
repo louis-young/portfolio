@@ -7,9 +7,7 @@
   grid-template-areas:
     "illustration"
     "content";
-  text-align: center;
   @include tablet {
-    text-align: left;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "illustration content";
     align-items: center;

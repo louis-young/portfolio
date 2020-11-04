@@ -15,7 +15,7 @@ const form = () => {
    */
 
   const destroy = (message) => {
-    form.innerHTML = `<h2 class="form__notification">${message}</h2>`;
+    form.innerHTML = `<h3 class="form__notification">${message}</h3>`;
     form.classList.add("form--sent");
   };
 

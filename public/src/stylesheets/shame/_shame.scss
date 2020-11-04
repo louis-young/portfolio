@@ -16,13 +16,15 @@
   visibility: collapse !important;
 }
 
-// Needed to apply a transition to all children elements and style certain components.
 .theme {
+  // Needed to apply a transition to all children elements and style certain components.
   * {
     transition: 0.2s;
   }
+  // Needed to apply dark mode styling to icons.
   &--dark {
-    .socials__icon {
+    .socials__icon,
+    .navigation__icon {
       filter: brightness(0) invert(1);
     }
   }

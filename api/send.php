@@ -102,9 +102,9 @@ class Mail
 
         // Response messages.
         if ($success) {
-            echo '{ "success": true, "message": "I\'ll get back to you soon." }';
+            echo '{ "success": true, "message": "Thanks for your enquiry. I\'ll be in touch with you soon." }';
         } else {
-            echo '{ "success": false, "message": "Oops, please try again." }';
+            echo '{ "success": false, "message": "Oops, something went wrong. Please try again." }';
         }
     }
 }

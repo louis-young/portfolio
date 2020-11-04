@@ -6,7 +6,7 @@ console.log(
 );
 
 console.log(
-  "%c 🐛 Found a bug? Please let me know via my email, GitHub issues etc...",
+  "%c 🐛 Found a bug? Please let me know via my email, GitHub issues, etc...",
   "font-size:1rem"
 );
 
@@ -15,4 +15,4 @@ console.log(
   "font-size:1rem"
 );
 
-console.log("%c Enjoy having a look around!", "font-size:1rem");
+console.log("%c Enjoy looking around!", "font-size:1rem");

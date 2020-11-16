@@ -1,4 +1,7 @@
 # Apache configuration.
+ErrorDocument 401 /errors/error.html
+ErrorDocument 404 /errors/error.html
+ErrorDocument 500 /errors/error.html
 
 # Caching and compression.
 <IfModule mod_expires.c>

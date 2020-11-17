@@ -1,7 +1,8 @@
 // Socials.
 .socials {
+  $dimensions: 20px;
   display: grid;
-  grid-template-columns: repeat(3, 20px);
+  grid-template-columns: repeat(2, $dimensions);
   grid-gap: 1rem;
   justify-content: center;
   &__icon {

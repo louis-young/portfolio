@@ -123,7 +123,7 @@ $headers = "From: website@louisyoung.co.uk\r\nMIME-Version: 1.0\r\nContent-type:
 
 $token = $fields->{'g-recaptcha-response'};
 
-$recaptcha = new Recaptcha('6LcfxNoUAAAAALqNxmKHcs09J9rb2SieouwC-CNV', $token);
+$recaptcha = new Recaptcha('KEY', $token);
 
 /**
  * Mail configuration array to be passed to 'Mail' object.

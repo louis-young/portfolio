@@ -1,8 +1,14 @@
-﻿# Project Structure
+﻿# Portfolio
+
+Lightweight, performant personal portfolio website developed using HTML5, Sass with BEM and ES6+ native JavaScript.
+
+![Portfolio](documentation/portfolio.jpg)
+
+## Project Structure
 
 A fast, scalable, modular and extendable front-end project structure for rapid development.
 
-## Features
+### Features
 
 - Local development server.
 - Scalable and modular architecture.
@@ -13,13 +19,13 @@ A fast, scalable, modular and extendable front-end project structure for rapid d
 - Base resets, styles and variables.
 - Build commands to generate a deployment ready archive.
 
-## System Requirements
+### System Requirements
 
 You'll need the following installed on your local machine.
 
 1.  [Node.js](https://nodejs.org/en/download/)
 
-## Setup
+### Setup
 
 **1. Clone the repository and install with NPM**
 
@@ -42,7 +48,7 @@ Simply run any command in the project root directory such as:
 
 `$ npm start`
 
-## Architecture
+### Architecture
 
 The root contains two directories:
 
@@ -70,7 +76,7 @@ Inside of `src` there are three directories:
 
 - `stylesheets` - contains the Sass architecture.
 
-## JavaScript
+### JavaScript
 
 Scripts are linted automatically for you to ensure a high code standard and fewer errors at runtime.
 
@@ -83,18 +89,18 @@ The JavaScript structure is as follows:
 - `public/src/scripts/bundle.js` - The entry file for bundling.
 
 - `public/src/scripts/main.js` - The main script file.
-- 
+-
 - `public/src/scripts/vendor/*.js` - Third party scripts/libraries/frameworks.
 
 You can add as many files to the `/scripts/` directory as you wish and add the import in to `bundle.js` and these will be bundled, transpiled and minified for production.
 
-## Sass
+### Sass
 
 [https://sass-guidelin.es/#architecture](https://sass-guidelin.es/#architecture)
 
-## Miscellaneous
+### Miscellaneous
 
-### Linting
+##### Linting
 
 All of your markup, Sass and JavaScript is automatically linted on change. The output will appear in the console and will prevent poor code, bad convention and will lower the amount of silent/runtime errors.
 
@@ -102,22 +108,22 @@ This can also be run as a separate task by running `$ npm run lint`.
 
 These can be configured by editing the associated linter configuration file in the `configuration` directory.
 
-### Sourcemaps
+##### Sourcemaps
 
 When using compilers and combining files, you need to keep track (a map) of where this code originated from. This helps immensely when debugging a project as you can see which file an error/warning is being thrown from and view this as source code.
 
 Simply use developer tools as you would usually, it's all handled for you.
 
-## Compilation
+### Compilation
 
-### Sass
+##### Sass
 
 Every Sass file and partial is linted, compiled, minified, prefixed and added in to the `main.min.css` file.
 
-### JavaScript
+##### JavaScript
 
 You can place multiple scripts in any of the scripts directories and import them in the `bundle.js` file. These will all be compiled and bundled in to the `bundle.min.js` file.
 
-### Assets
+##### Assets
 
 Static assets are automatically compressed/optimised and moved to the `dist` directory. This supports most common static asset file types and also supports subdirectories.

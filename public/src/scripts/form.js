@@ -1,31 +1,10 @@
-/**
- * Form.
- *
- */
-
 const form = () => {
   const form = document.querySelector(".form");
-
-  /**
-   * Destroy.
-   *
-   * Destroy the form and show message.
-   *
-   * @param { string } message
-   */
 
   const destroy = (message) => {
     form.innerHTML = `<h3 class="form__notification">${message}</h3>`;
     form.classList.add("form--sent");
   };
-
-  /**
-   * Serialize.
-   *
-   * Serialize the form data.
-   *
-   * @param { nodeList } inputs
-   */
 
   const serialize = (inputs) => {
     const fields = {};
@@ -38,14 +17,6 @@ const form = () => {
 
     return fields;
   };
-
-  /**
-   * Submit.
-   *
-   * Handle the form submission.
-   *
-   * @param { object } event
-   */
 
   const submit = async (event) => {
     event.preventDefault();
@@ -83,19 +54,12 @@ const form = () => {
 
 form();
 
-/**
- * Recaptcha.
- */
-
 /* eslint-disable no-undef */
 
 grecaptcha.ready(async () => {
-  const response = grecaptcha.execute(
-    "6LcfxNoUAAAAABsesl6rqP3wSfjjt_k27sxYyRbx",
-    {
-      action: "form",
-    }
-  );
+  const response = grecaptcha.execute("6LcfxNoUAAAAABsesl6rqP3wSfjjt_k27sxYyRbx", {
+    action: "form",
+  });
 
   const token = await response;
   const form = document.querySelector(".form");

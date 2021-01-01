@@ -1,12 +1,11 @@
-// Socials.
 .socials {
-  $dimensions: 20px;
+  $dimensions: 22.5px;
   display: grid;
   grid-template-columns: repeat(2, $dimensions);
   grid-gap: 1rem;
   justify-content: center;
   &__icon {
     @extend %hover;
-    width: 20px;
+    width: $dimensions;
   }
 }

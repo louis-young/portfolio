@@ -1,12 +1,10 @@
-// Section.
 .section {
   $self: &;
   $padding: (
     "mobile": 2rem,
     "tablet": 3rem,
     "laptop": 5rem,
-    "desktop": 6rem,
-    "retina": 7.5rem
+    "desktop": 7.5rem,
   );
 
   padding: map-get($padding, "mobile") 0;
@@ -23,10 +21,6 @@
     padding: map-get($padding, "desktop") 0;
   }
 
-  @include retina {
-    padding: map-get($padding, "retina") 0;
-  }
-
   &--first {
     padding-top: map-get($padding, "mobile") * 2;
 
@@ -40,10 +34,6 @@
 
     @include desktop {
       padding-top: map-get($padding, "desktop") * 2;
-    }
-
-    @include retina {
-      padding-top: map-get($padding, "retina") * 2;
     }
   }
 
@@ -60,10 +50,6 @@
 
     @include desktop {
       padding-bottom: map-get($padding, "desktop") * 2;
-    }
-
-    @include retina {
-      padding-bottom: map-get($padding, "retina") * 2;
     }
   }
 

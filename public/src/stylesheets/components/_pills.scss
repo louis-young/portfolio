@@ -1,14 +1,12 @@
-// Pills.
-$padding: 0.5rem;
-$margin: 0.25rem;
-
 .pills {
   display: inline-block;
   padding-top: 0.75rem;
 }
 
-// Pill.
 .pill {
+  $padding: 0.5rem;
+  $margin: 0.25rem;
+
   display: inline-block;
   padding: $padding;
   margin: $margin;

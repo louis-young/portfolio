@@ -1,63 +1,40 @@
-/**
-* Colours.
-*/
-
 $primary-color: #4156d0;
-
-/**
- * Text.
- */
 
 $text: "text";
 
-// Light.
 $text-color: #212529;
 $text-color-medium: #434950;
 
-// Dark.
 $text-color-dark: #ffffff;
-
-/**
- * Background.
- */
 
 $background: "background";
 $background-accent: "background-accent";
 
-// Light.
 $background-color: #fafafa;
 $background-color-accent: #f1f7ff;
 
-// Dark.
 $background-color-dark: #0f1420;
 $background-color-accent-dark: #181e30;
 
-/**
- * Border.
- */
-
 $border: "border";
 
-// Light.
 $border-color: rgba(0, 0, 0, 0.05);
 
-// Dark.
 $border-color-dark: rgba(255, 255, 255, 0.05);
 
-// Themes.
 $themes: (
   light: (
     background: $background-color,
     text: $text-color,
     border: $border-color,
-    background-accent: $background-color-accent
+    background-accent: $background-color-accent,
   ),
   dark: (
     background: $background-color-dark,
     text: $text-color-dark,
     border: $border-color-dark,
-    background-accent: $background-color-accent-dark
-  )
+    background-accent: $background-color-accent-dark,
+  ),
 );
 
 $ratio: 10%;
@@ -68,19 +45,11 @@ $primary-color-dark: darken($primary-color, $ratio);
 $primary-color-light: #f1f7ff;
 $primary-color-transparent: transparentize($primary-color, $transparency);
 
-/**
- * Miscellaneous.
- */
-
 $shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 10px 20px rgba(0, 0, 0, 0.05);
 
 $overlay: rgba(0, 0, 0, 0.75);
 
 $round: 0.25rem;
-
-/**
-* Material design palette.
-*/
 
 $red: #f44336;
 $pink: #e91e63;

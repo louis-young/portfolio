@@ -6,7 +6,6 @@ $breakpoints: (
   tablet: 768px,
   laptop: 1024px,
   desktop: 1248px,
-  retina: 1774px
 );
 
 @mixin tablet {
@@ -23,12 +22,6 @@ $breakpoints: (
 
 @mixin desktop {
   @media (min-width: map-get($breakpoints, desktop)) {
-    @content;
-  }
-}
-
-@mixin retina {
-  @media (min-width: map-get($breakpoints, retina)) {
     @content;
   }
 }

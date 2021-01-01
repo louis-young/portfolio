@@ -1,4 +1,3 @@
-// // Header.
 .header {
   position: fixed;
   top: 0;
@@ -68,7 +67,6 @@
   }
 }
 
-// Navigation.
 .navigation {
   display: none;
   flex-basis: 100%;
@@ -124,14 +122,13 @@
   }
 }
 
-// Underlay.
 .underlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background: black;
+  background: $black;
   z-index: 4;
   opacity: 0;
   pointer-events: none;

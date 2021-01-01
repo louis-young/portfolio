@@ -1,7 +1,4 @@
-// Menu.
-
 const menu = () => {
-  // Menu toggle.
   const toggle = document.querySelector(".toggle");
   const navigation = document.querySelector(".navigation");
   const scrollable = document.querySelector(".navigation__inner");
@@ -23,7 +20,7 @@ const menu = () => {
 
   const header = document.querySelector(".header");
 
-  header.addEventListener("click", event => {
+  header.addEventListener("click", (event) => {
     const { target } = event;
 
     if (!target.classList.contains("header__link")) {

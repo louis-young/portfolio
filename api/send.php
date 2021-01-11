@@ -19,7 +19,7 @@ $fields = json_decode($_POST['fields']);
 
 
 // Development mode for error reporting.
-$development = true;
+$development = false;
 
 if ($development) {
     ini_set('display_errors', 1);
@@ -117,7 +117,7 @@ class Mail
 
 $recipient = 'me@louisyoung.co.uk';
 
-$subject = 'Test';
+$subject = 'Website Enquiry';
 
 $headers = "From: website@louisyoung.co.uk\r\nMIME-Version: 1.0\r\nContent-type: text/html; charset: utf8\r\n";
 

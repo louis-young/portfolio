@@ -1,6 +1,6 @@
 ﻿# Portfolio
 
-Lightweight, performant personal portfolio website developed using HTML5, Sass with BEM and ES6+ native JavaScript.
+A personal portfolio website - developed using HTML5, Sass with BEM and ES6+ JavaScript.
 
 ![Portfolio](documentation/portfolio.jpg)
 

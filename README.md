@@ -4,6 +4,10 @@ A personal portfolio website.
 
 ![Portfolio](documentation/portfolio.jpg)
 
+## Description
+
+A personal portfolio website that enables me to showcase my work and allow others to contact me.
+
 ## Technologies
 
 - HTML5.

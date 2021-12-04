@@ -8,7 +8,7 @@ A personal portfolio website.
 
 - HTML5.
 - Sass (BEM).
-- ES6+ JavaScript.
+- JavaScript.
 
 ### System Requirements
 

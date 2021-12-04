@@ -2,13 +2,13 @@
 
 A personal portfolio website.
 
-Built with HTML5, Sass (with BEM), and ES6+ JavaScript.
-
 ![Portfolio](documentation/portfolio.jpg)
 
-## Project Structure
+## Technologies
 
-A fast, scalable, modular and extendable front-end project structure for rapid development.
+- HTML5.
+- Sass (BEM).
+- ES6+ JavaScript.
 
 ### Features
 

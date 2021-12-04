@@ -1,4 +1,4 @@
-﻿# Portfolio
+# Portfolio
 
 A personal portfolio website.
 
@@ -14,20 +14,20 @@ A personal portfolio website.
 
 You'll need the following installed on your local machine.
 
-1.  [Node.js](https://nodejs.org/en/download/)
+1. [Node.js](https://nodejs.org/en/download/)
 
 ### Setup
 
-**1. Clone the repository and install with NPM**
+1. Clone the repository and install with NPM
 
 To set up the project structure, simply clone the git repository and install NPM.
 
-```
+```terminal
 $ git clone git@github.com:louis-young/website-boilerplate.git
 $ npm install
 ```
 
-**2. Run**
+2. Run
 
 There are different tasks which you can run depending on your needs:
 

@@ -45,7 +45,7 @@ Simply run any command in the project root directory such as:
 
 ### Miscellaneous
 
-##### Linting
+#### Linting
 
 All of your markup, Sass and JavaScript is automatically linted on change. The output will appear in the console and will prevent poor code, bad convention and will lower the amount of silent/runtime errors.
 
@@ -53,7 +53,7 @@ This can also be run as a separate task by running `$ npm run lint`.
 
 These can be configured by editing the associated linter configuration file in the `configuration` directory.
 
-##### Sourcemaps
+#### Sourcemaps
 
 When using compilers and combining files, you need to keep track (a map) of where this code originated from. This helps immensely when debugging a project as you can see which file an error/warning is being thrown from and view this as source code.
 
@@ -61,14 +61,14 @@ Simply use developer tools as you would usually, it's all handled for you.
 
 ### Compilation
 
-##### Sass
+#### Sass
 
 Every Sass file and partial is linted, compiled, minified, prefixed and added in to the `main.min.css` file.
 
-##### JavaScript
+#### JavaScript
 
 You can place multiple scripts in any of the scripts directories and import them in the `bundle.js` file. These will all be compiled and bundled in to the `bundle.min.js` file.
 
-##### Assets
+#### Assets
 
 Static assets are automatically compressed/optimised and moved to the `dist` directory. This supports most common static asset file types and also supports subdirectories.

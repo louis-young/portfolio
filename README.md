@@ -1,6 +1,8 @@
 ﻿# Portfolio
 
-A personal portfolio website - built with HTML5, Sass with BEM, and ES6+ JavaScript.
+A personal portfolio website.
+
+Built with HTML5, Sass (with BEM), and ES6+ JavaScript.
 
 ![Portfolio](documentation/portfolio.jpg)
 

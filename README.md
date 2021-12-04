@@ -6,7 +6,11 @@ A personal portfolio website.
 
 ## Description
 
-A personal portfolio website that enables me to showcase my work and allow others to contact me.
+A personal portfolio website with a slick and intuitive user interface.
+
+## Motivation
+
+This enables me to showcase my work and allow others to contact me.
 
 ## Technologies
 

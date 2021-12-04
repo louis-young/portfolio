@@ -10,17 +10,6 @@ A personal portfolio website.
 - Sass (BEM).
 - ES6+ JavaScript.
 
-### Features
-
-- Local development server.
-- Scalable and modular architecture.
-- Markup, Sass and JavaScript linting.
-- JavaScript bundling, transpiling and minification.
-- Sass preprocessing, auto-prefixing and minification.
-- Static asset optimization.
-- Base resets, styles and variables.
-- Build commands to generate a deployment ready archive.
-
 ### System Requirements
 
 You'll need the following installed on your local machine.
@@ -34,7 +23,7 @@ You'll need the following installed on your local machine.
 To set up the project structure, simply clone the git repository and install NPM.
 
 ```
-$ git clone git@bitbucket.org:FluidStudiosStaff/project-structure.git
+$ git clone git@github.com:louis-young/website-boilerplate.git
 $ npm install
 ```
 
@@ -49,52 +38,6 @@ There are different tasks which you can run depending on your needs:
 Simply run any command in the project root directory such as:
 
 `$ npm start`
-
-### Architecture
-
-The root contains two directories:
-
-- `node_modules`
-
-- `public`
-
-`node_modules` can be ignored as they never need to be edited. They are automatically populated based on the dependencies when installed.
-
-`public` contains two directories:
-
-- `dist`
-
-- `src`
-
-`dist` contains a compiled version of the source code/assets which is read-only (do not touch).
-
-`src` contains the working source code.
-
-Inside of `src` there are three directories:
-
-- `assets` - contains all of the static assets used in the project such as images, videos etc.
-
-- `scripts` - contains your JavaScript (including frameworks and libraries which aren't included via CDN).
-
-- `stylesheets` - contains the Sass architecture.
-
-### JavaScript
-
-Scripts are linted automatically for you to ensure a high code standard and fewer errors at runtime.
-
-The `scripts` directory in the project structure contains a vendor subdirectory for frameworks and libraries (if not using a CDN).
-
-The `main.js` file in located in the root of `scripts`.
-
-The JavaScript structure is as follows:
-
-- `public/src/scripts/bundle.js` - The entry file for bundling.
-
-- `public/src/scripts/main.js` - The main script file.
--
-- `public/src/scripts/vendor/*.js` - Third party scripts/libraries/frameworks.
-
-You can add as many files to the `/scripts/` directory as you wish and add the import in to `bundle.js` and these will be bundled, transpiled and minified for production.
 
 ### Sass
 

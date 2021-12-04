@@ -10,6 +10,8 @@ A personal portfolio website.
 - Sass (BEM).
 - JavaScript.
 
+---
+
 ### System Requirements
 
 You'll need the following installed on your local machine.
